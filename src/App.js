@@ -3,7 +3,6 @@ import './App.css';
 import AuthProvider from './context/AuthProvider';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import Explore from './Pages/Explore/Explore';
-import Footer from './Pages/Home/Home/Footer/Footer';
 import Home from './Pages/Home/Home/Home';
 import NavBar from './Pages/Home/NavBar/NavBar';
 import Login from './Pages/Login/Login';
@@ -41,10 +40,9 @@ function App() {
             <Home></Home>
           </Route>
           <Route exact path="*">
-          <NotFound></NotFound>
-        </Route>
+            <NotFound></NotFound>
+          </Route>
         </Switch>
-        
       </BrowserRouter>
       </AuthProvider>
     </div>

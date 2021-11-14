@@ -17,7 +17,7 @@ const Reviews = () => {
             <CssBaseline />
             <Box sx={{ flexGrow: 1 }}>
                 <Container>
-                    <Typography variant="h4" sx={{ fontWeight: 'bold', my: 4, color: '#C3073F'}} gutterBottom component="div">
+                    <Typography variant="h4" sx={{ fontWeight: 'bold', my: 5, color: '#C3073F'}} gutterBottom component="div">
                         Client's reviews
                     </Typography>
                 <Grid container spacing={{ xs: 2, md: 3 }}>

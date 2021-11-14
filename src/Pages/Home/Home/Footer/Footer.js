@@ -3,7 +3,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import React from 'react';
-import { Container, Grid, TextField, Typography } from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
 
 const Footer = () => {
     return (
