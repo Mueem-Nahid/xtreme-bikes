@@ -3,10 +3,12 @@ import './App.css';
 import AuthProvider from './context/AuthProvider';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import Explore from './Pages/Explore/Explore';
+import Footer from './Pages/Home/Home/Footer/Footer';
 import Home from './Pages/Home/Home/Home';
 import NavBar from './Pages/Home/NavBar/NavBar';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Login/Register/Register';
+import NotFound from './Pages/NotFound/NotFound';
 import OrderNow from './Pages/OrderNow/OrderNow';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 
@@ -38,7 +40,11 @@ function App() {
           <Route exact path="/">
             <Home></Home>
           </Route>
+          <Route exact path="*">
+          <NotFound></NotFound>
+        </Route>
         </Switch>
+        
       </BrowserRouter>
       </AuthProvider>
     </div>
