@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Container, Grid, TextField, Typography, Alert, CircularProgress } from '@mui/material';
+import { Button, Container, Grid, TextField, Typography, Alert } from '@mui/material';
 import { Box } from '@mui/system';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
@@ -7,9 +7,9 @@ import useAuth from '../../../hooks/useAuth';
 
 const Register = () => {
 
-    const {createUser, error, setError, isLoading} = useAuth();
+    const {createUser, error} = useAuth();
 
-    const { register, handleSubmit, reset, formState: {errors} } = useForm();
+    const { register, handleSubmit, reset } = useForm();
 
     const handleRegistration = data => {
         createUser( data?.userName, data?.email, data?.password);

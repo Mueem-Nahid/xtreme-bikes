@@ -12,7 +12,7 @@ const Review = () => {
 
     const [products] = useProducts();
 
-    const { register, handleSubmit, reset, formState: {errors} } = useForm();
+    const { register, handleSubmit, reset } = useForm();
 
     const [selectedProduct, setSelectedProduct] = React.useState('');
 
@@ -20,9 +20,7 @@ const Review = () => {
         setSelectedProduct(event.target.value);
     };
 
-    const onSubmit = data => {
-        console.log(data);
-    
+    const onSubmit = data => {    
         fetch('https://polar-earth-13486.herokuapp.com/reviews', {
             method: 'POST',
             headers: {

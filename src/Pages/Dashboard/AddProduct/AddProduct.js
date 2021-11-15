@@ -1,5 +1,5 @@
 import { Button, Container, Grid, TextField, Typography, TextareaAutosize } from '@mui/material';
-import { styled, useTheme } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import React from 'react';
 import { Box } from '@mui/system';
 import { useForm } from 'react-hook-form';
@@ -26,20 +26,11 @@ const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
     }),
   );
 
-  const DrawerHeader = styled('div')(({ theme }) => ({
-    display: 'flex',
-    alignItems: 'center',
-    padding: theme.spacing(0, 1),
-    // necessary for content to be below app bar
-    ...theme.mixins.toolbar,
-    justifyContent: 'flex-end',
-  }));
-
 const AddProduct = () => {
 
-const [open, setOpen] = React.useState(false);
+const [open] = React.useState(false);
 
-const { register, handleSubmit, reset, formState: {errors} } = useForm();
+const { register, handleSubmit, reset } = useForm();
 
 /*const handleDrawerOpen = () => {
     setOpen(true);

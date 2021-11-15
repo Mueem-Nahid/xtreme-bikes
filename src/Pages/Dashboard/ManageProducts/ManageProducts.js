@@ -1,5 +1,5 @@
 import { Button, Container, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from '@mui/material';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import DeleteIcon from '@mui/icons-material/Delete';
 import useProducts from '../../../hooks/useProducts';
 

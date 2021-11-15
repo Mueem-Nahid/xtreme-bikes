@@ -7,7 +7,7 @@ import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
 
-    const { register, handleSubmit, reset, formState: {errors} } = useForm();
+    const { register, handleSubmit } = useForm();
 
     const {signInUsingEmailAndPass, error, setError} = useAuth();
 
@@ -18,7 +18,6 @@ const Login = () => {
     const redirect_url = location.state?.from || '/';
 
     const handleEmailLogin = data => {
-        console.log(data);
         signInUsingEmailAndPass(data?.email, data?.password)
         .then(result => {
             history.push(redirect_url);

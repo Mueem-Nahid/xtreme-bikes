@@ -17,7 +17,7 @@ import useAuth from "../../../hooks/useAuth";
 
 const useStyles = makeStyles((theme) => ({
   navlinks: {
-    marginLeft: theme.spacing(76),
+    marginLeft: theme.spacing(66), //67
     display: "flex",
   },
   logo: {
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#C3073F",
     fontSize: "20px",
     fontWeight: "bold",
-    marginLeft: theme.spacing(2),
+    marginLeft: theme.spacing(2), //2
     "&:hover": {
       color: "white",
       borderBottom: "1px solid white",
@@ -73,9 +73,9 @@ function Navbar() {
                 <Link to="/dashboard" className={classes.link}>
                   Dashboard
                 </Link>
-                {/* <Link to="!#" className={classes.link}>
-                  {user.email}
-                </Link> */}
+                <Link to="#!" className={classes.link}>
+                  {user.displayName}
+                </Link>
                 <Link to="/home" onClick={logOut} className={classes.link}>
                   Logout
                 </Link>

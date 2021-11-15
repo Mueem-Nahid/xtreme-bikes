@@ -9,7 +9,6 @@ const useSpecificProduct = (id) => {
         fetch(url)
         .then(res => res.json())
         .then(data => {
-            console.log(data);
             setSpecificProduct(data);
         })
     }, [id]);

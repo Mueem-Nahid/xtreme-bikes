@@ -7,7 +7,7 @@ const MakeAdmin = () => {
 
     const [success, setSuccess] = useState(false);
 
-    const { register, handleSubmit, reset, formState: {errors} } = useForm();
+    const { register, handleSubmit, reset } = useForm();
 
     const handleMakeAdmin = data => {
         const user = data;

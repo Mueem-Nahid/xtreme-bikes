@@ -11,7 +11,7 @@ const OrderNow = () => {
 
     const {user} = useAuth();
 
-    const { register, handleSubmit, reset, formState: {errors} } = useForm();
+    const { register, handleSubmit, reset } = useForm();
 
     const {id} = useParams();
 
@@ -20,7 +20,6 @@ const OrderNow = () => {
     const placeOrder = data => {
         data.orderedProductId = id;
         data.orderedProductName = specificProduct.modelName;
-        console.log(data);
         fetch('https://polar-earth-13486.herokuapp.com/orderNow', {
             method: 'POST',
             headers: {

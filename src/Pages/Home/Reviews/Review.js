@@ -16,7 +16,7 @@ const Review = (props) => {
                         <Typography variant="body2" color="text.secondary">
                         {comment}
                         </Typography>
-                        <Rating name="read-only" value={rating} readOnly />
+                        <Rating name="read-only" value={Number(rating)} readOnly />
                     </CardContent>
             </Card>
         </Grid>

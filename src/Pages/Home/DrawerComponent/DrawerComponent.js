@@ -55,6 +55,11 @@ function DrawerComponent() {
               </ListItem>
               <ListItem onClick={() => setOpenDrawer(false)}>
                 <ListItemText>
+                  <Link to="#!" className={classes.link}>{user.displayName}</Link>
+                </ListItemText>
+              </ListItem>
+              <ListItem onClick={() => setOpenDrawer(false)}>
+                <ListItemText>
                   <Link to="/" onClick={logOut} className={classes.link}>Logout</Link>
                 </ListItemText>
               </ListItem>

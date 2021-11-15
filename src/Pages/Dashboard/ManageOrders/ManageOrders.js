@@ -55,7 +55,7 @@ const ManageOrders = () => {
 
     return (
         <Container>
-            <Grid spacing={0} sx={{}}>
+            <Grid>
                 <Grid item xs={12}>
                 <Typography variant="h4" gutterBottom component="div" sx={{fontWeight: 'bold', my: 4}}>
                         Manage Orders
